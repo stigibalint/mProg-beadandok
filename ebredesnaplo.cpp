@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct Ebredes {
+    string nap;
+    int ora;
+};
+
+int main() {
+    Ebredes heti_naplo[7] = {
+        {"Hetfo", 6},
+        {"Kedd", 7},
+        {"Szerda", 6},
+        {"Csutortok", 7},
+        {"Pentek", 6},
+        {"Szombat", 9},
+        {"Vasarnap", 9}
+    };
+
+    cout << "Heti ebredesi naplo:" << endl;
+
+    for (int i = 0; i < 7; i++) {
+        cout << heti_naplo[i].nap << " - " << heti_naplo[i].ora << ":00" << endl;
+    }
+
+    return 0;
+}
